@@ -1,7 +1,14 @@
 from rest_framework import serializers
-from .models import Hotels
+from .models import *
 
-class HotelsSerializer(serializers.ModelSerializer):
+
+class MehmonxonaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Hotels
+        model = Mehmonxona
+        fields = ['id', 'title', 'image', 'job_time', 'address']
+
+
+class HotelSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Hotel
         fields = '__all__'  # Serialize all fields of the model
