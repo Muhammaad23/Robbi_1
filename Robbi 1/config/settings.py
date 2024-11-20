@@ -38,8 +38,13 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'rest_framework',
-    'hotels',
     'django_filters',
+    # app
+    'restaurants',
+    'hotels',
+    'clinic_and_sanatorium',
+    'parks',
+    'mosques',
 ]
 
 REST_FRAMEWORK = {
