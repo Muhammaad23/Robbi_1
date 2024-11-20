@@ -1,7 +1,7 @@
 from django.db import models
 from django.core.validators import RegexValidator
 
-class Mehmonxona(models.Model):
+class Hotels(models.Model):
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to='hotels/', null=True, blank=True)
     job_time = models.CharField(max_length=50)
@@ -11,7 +11,7 @@ class Mehmonxona(models.Model):
         return self.title
 
 
-class Hotel(models.Model):
+class Hotel_information(models.Model):
     title = models.CharField(max_length=100)
     image = models.ImageField(upload_to='hotels/', null=True, blank=True)
     job_time = models.CharField(max_length=50)
